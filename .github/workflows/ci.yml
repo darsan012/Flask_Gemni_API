@@ -33,11 +33,11 @@ jobs:
         run:
            python app/tests/__init__.py # running the __init__.py under app/tests
 
-# Application is deployed after test is passed
-deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - name: Deploy to Production
-      run: |
-        echo "Deploying application..."
+  # Application is deployed after test is passed
+  deploy:
+      needs: build
+      runs-on: ubuntu-latest
+      steps:
+      - name: Deploy to Production
+        run: |
+          echo "Deploying application..."
