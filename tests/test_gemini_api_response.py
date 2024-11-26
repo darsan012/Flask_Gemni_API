@@ -15,7 +15,7 @@ class TestRoutes(unittest.TestCase):
 
         # check for the response, the response should have s3, aws included
         self.assertIn("S3", response)
-        self.assertIn("aws", response)
+        self.assertIn("AWS", response)
 
     # testing the model with invalid request
     def test_invalid_prompt(self):
