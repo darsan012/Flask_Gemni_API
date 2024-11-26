@@ -31,7 +31,7 @@ jobs:
 
       - name: Run tests
         run:
-           python app/tests/__init__.py # running the __init__.py under app/tests
+           python tests/__init__.py # running the __init__.py under app/tests
 
   # Application is deployed after test is passed
   deploy:
