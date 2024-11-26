@@ -35,7 +35,7 @@ jobs:
 
   # Application is deployed after test is passed
   deploy:
-      needs: build
+      needs: test
       runs-on: ubuntu-latest
       steps:
       - name: Deploy to Production
